@@ -16,7 +16,7 @@
 }
 
 .navbar{
-    /* border: 1px solid purple; */
+    border: 1px solid purple;
     width: 80%;
     height: 100%;
     margin: auto;
@@ -26,8 +26,8 @@
 }
 
 .logo{
-    /* border: 1px solid; */
-    width: 20%;
+    border: 1px solid;
+    /* width: 20%; */
 }
 
 .wema-logo-img{
@@ -35,10 +35,11 @@
 }
 
 .nav-links{
-    /* border: 1px solid blue; */
-    width: 50%;
+    border: 1px solid blue;
+    /* width: 50%; */
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
+    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -63,10 +64,10 @@
 }
 
 .nav-btn-container{
-    /* border: 1px solid green; */
+    border: 1px solid green;
     display: flex;
     justify-content: end;
-    width: 30%;
+    /* width: 30%; */
 
 }
 
@@ -109,6 +110,14 @@
    }
 
     .nav-btn-container2{
-        opacity: 1 !important;
+        opacity: 1 !important ;
     }   
+}
+
+@media(max-width:500px){
+    .nav-btn-container2{
+        width: 50% !important;
+        border: 1px solid red;
+        margin-right: 25px !important;
+    }
 }
