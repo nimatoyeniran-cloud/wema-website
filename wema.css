@@ -218,15 +218,16 @@
     border-radius: 50%;
     width: 7px !important;
     height: 7px !important;
-    background-color: transparent !important;
+    /* background-color: transparent !important; */
+    background-color: greenyellow !important;
     border: 1px solid grey !important;
    
 }
 
-/* .carousel-indicators [data-bs-target] .active{
+ .carousel-indicators [data-bs-slide]{
     background-color: royalblue !important;
   
-} */
+}
 
 .ad-0{
     background-image: url(https://wemabank.com/assets/web-bg-NeQw25Yh.jpg);
@@ -572,6 +573,130 @@
     to{transform: translate(-100%, -50%);}
 }
 
+.card-section{
+   background-color: #F6F6F6 ;
+   /* width: 100%; */
+   height: 30dvh;
+}
 
+.cards{
+   display: flex;
+   /* border: 1px solid; */
+   width: 80%;
+   margin: auto;
+   justify-content: space-between;
+
+}
+
+.card-container{
+    margin: 50px auto;
+    width: 15%;
+    height: 110px;
+    background-color: white;
+    border-radius: 1px;
+    /* box-shadow: 0px 0px 0px 1px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+     /* transition: background-color 0.3s ease-in-out 0.1s; */
+     /* transition-property: transform, box shadown;
+     transition-duration: .5s;
+     transition-timing-function: linear; */
+    
+}
+
+.card-container:hover{
+    /* transition: all; */
+     /* transition: width 2s, height 4s, background-color 3s; */
+    transform: translate(0px,-15px)  rotateX(10deg);
+    
+    }
+
+
+    .top-flex{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+
+    }
+
+    .flex-text{
+        /* border: 1px solid; */
+        width: 47%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+.flex-text>h6{
+    color: #981D87;
+    font-weight: bold;
+
+}
+
+.flex-text>h2{
+    font-weight: bold;
+}
+
+.flex-text>p{
+    color: rgb(118, 117, 117);
+    font-size: 14px;
+}
+
+.large-card-sect{
+    /* border: 1px solid; */
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+    overflow: auto;
+}
+
+.large-card{
+    width: 31%;
+    height: 45dvh;
+    background-color: #FFF4FF;
+    padding: 40px 20px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 0;
+    transition-property: transform, box-shadow;
+    transition-duration: 1s;
+    
+}
+
+.large-card:hover{
+    transform: translateY( -20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.large-card-img{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+}
+
+.large-card-texts>h5{
+    font-weight: bold;
+    
+}
+
+.large-card-texts>p{
+    color: rgba(97, 97, 97, 0.907);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.large-card-texts>a{
+    color: black;
+    text-decoration: none;
+}
 
 
