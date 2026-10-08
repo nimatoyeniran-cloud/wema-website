@@ -218,8 +218,7 @@
     border-radius: 50%;
     width: 7px !important;
     height: 7px !important;
-    /* background-color: transparent !important; */
-    background-color: greenyellow !important;
+    background-color: royalblue !important;
     border: 1px solid grey !important;
    
 }
@@ -512,15 +511,7 @@
                 /* ad-responsiveness */
 @media(max-width:900px){
    
-  .ad-0 {
-    height: auto;
-    min-height: 80dvh;
-  }
-
-  .ad-o img {
-    width: 100%;
-    max-height: none;
-  }
+  
 }
 
 
@@ -608,8 +599,7 @@
 }
 
 .card-container:hover{
-    /* transition: all; */
-     /* transition: width 2s, height 4s, background-color 3s; */
+   
     transform: translate(0px,-15px)  rotateX(10deg);
     
     }
@@ -620,6 +610,7 @@
         justify-content: space-between;
         width: 80%;
         margin: auto;
+        
 
     }
 
@@ -648,17 +639,17 @@
 
 .large-card-sect{
     /* border: 1px solid; */
+    padding-top: 20px;
     width: 80%;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
-    overflow: auto;
 }
 
 .large-card{
-    width: 31%;
+    /* border: 1px solid; */
+    /* width: 31%; */
     height: 45dvh;
     background-color: #FFF4FF;
     padding: 40px 20px;
@@ -666,8 +657,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-shrink: 0;
-    transition-property: transform, box-shadow;
+    /* flex-shrink: 0; */
+    transition-property: all;
     transition-duration: 1s;
     
 }
@@ -699,4 +690,397 @@
     text-decoration: none;
 }
 
+.tailor-dots{
+    position: relative;
+    z-index: 1;
+    
+}
 
+.td-1{
+    position: absolute;
+    /* top: 10px; */
+    left: -4%;
+}
+
+.td-2{
+    position: absolute;
+    top:100px;
+    left: 75%;
+}
+
+.tailor-container{
+    width: 80%;
+    margin:70px auto;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.tailor-flex-texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 53%;
+}
+
+.SME-logo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.SME-logo>p{
+    color: #981D87;
+    font-weight: 600;
+}
+
+.SME-texts{
+    display: flex;
+    flex-direction: column;
+}
+
+.SME-texts>h4{
+    font-weight: 600;
+}
+
+.SME-texts>p{
+    color: grey;
+    font-size: 14px;
+}
+
+.SME-texts>a{
+    /* margin-top: 20px; */
+     border:none;
+    width: fit-content;
+    padding: 18px 45px;
+    border-radius: 50px;
+    background-color: #981D87;
+    text-decoration: none;
+    color: rgb(215, 212, 212);
+    font-weight: 600;
+}
+
+.wide-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    /* border: 1px solid; */
+    width: 80%;
+    margin: auto;
+}
+
+.card{
+    border-radius: 2px !important;
+}
+.card:hover{
+   
+    transform: translate(0px,-15px)  rotateX(10deg);
+    
+    }
+
+
+.card>img{
+    padding: 10px 0px 0px 10px;
+}
+
+.card-body>h5{
+    font-weight: 600;
+}
+.card-body>p{
+    color: grey;
+    font-size: 14px;
+}
+
+.gif-container{
+    width: 70%;
+    margin:70px 150px 70px;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.gif-flex-texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 53%;
+}
+
+.custom-logo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.custom-logo>p{
+    color: #981D87;
+    font-weight: 600;
+}
+
+.custom-texts{
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-texts>h4{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.custom-texts>p{
+    color: grey;
+    font-size: 14px;
+}
+
+.custom-texts>a{
+    /* margin-top: 20px; */
+     border:none;
+    width: fit-content;
+    padding: 18px 45px;
+    border-radius: 50px;
+    background-color: #981D87;
+    text-decoration: none;
+    color: rgb(215, 212, 212);
+    font-weight: 600;
+}
+
+.trader-container{
+    width: 80%;
+    margin:70px auto;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.trader-flex-texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 53%;
+}
+
+.ALAT-logo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ALAT-logo>p{
+    color: #981D87;
+    font-weight: 600;
+}
+
+.ALAT-texts{
+    display: flex;
+    flex-direction: column;
+}
+
+.ALAT-texts>h4{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.ALAT-texts>p{
+    color: grey;
+    font-size: 14px;
+}
+
+.ALAT-texts>a{
+    /* margin-top: 20px; */
+     border:none;
+    width: fit-content;
+    padding: 18px 45px;
+    border-radius: 50px;
+    background-color: #981D87;
+    text-decoration: none;
+    color: rgb(215, 212, 212);
+    font-weight: 600;
+}
+
+.investor-relations{
+    border: 1px solid;
+    /* height: 50dvh; */
+    background-image: url(https://wemabank.com/assets/background-V42PbY_R.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0px;
+}
+
+.investor-content{
+    
+    width: 80%;
+    /* border: 2px solid white; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 25px;
+    /* align-items: center; */
+}
+
+.investor-texts>h6{
+    color: silver;
+    font-weight: 600;
+}
+
+.investor-texts>h2{
+    color: white;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.investor-texts>p{
+     color: silver;
+}
+
+.ratings{
+    /* border: 1px solid yellow; */
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+}
+
+.ratings-container>h4{
+    color: #EC49DE;
+    font-weight: 600;
+
+}
+
+.ratings-container>p{
+    color: silver;
+}
+
+.investor-cards{
+    width: 80%;
+    margin: 60px auto 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+        /* all card class */
+.card:hover h5{
+    color: #981D87;
+}
+
+.plant-container{
+    background-color: #FBFBFB;
+    width: 80%;
+    margin:70px auto;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.plant-flex-texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 53%;
+}
+
+.sustainability-logo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sustainability-logo>p{
+    color: #981D87;
+    font-weight: 600;
+}
+
+.sustainability-texts{
+    display: flex;
+    flex-direction: column;
+}
+
+.sustainability-texts>h4{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.sustainability-texts>p{
+    color: grey;
+    font-size: 14px;
+}
+
+.sustainability-texts>a{
+    /* margin-top: 20px; */
+     border:none;
+    width: fit-content;
+    padding: 18px 45px;
+    border-radius: 50px;
+    background-color: #981D87;
+    text-decoration: none;
+    color: rgb(215, 212, 212);
+    font-weight: 600;
+}
+
+.plant-img{
+    /* border: 2px solid; */
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 30px;
+}
+
+.plant-img-left{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-container{
+    /* background-color: yellow; */
+    margin-top: 60px;
+    padding: 60px 0px;
+    
+}
+
+.testimonial-smaller-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid; */
+    gap: 60px;
+}
+
+.testimonial-texts>h6{
+    color: #981D87;
+    font-weight: 600;
+}
+
+.testimonial-texts>h3{
+    font-weight: 600;
+}
+
+.testimonial-flex{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 50px;
+    gap: 20px;
+    overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.testimonial-card{
+    flex-shrink: 0;
+
+}
+
+.testimonial-card:hover{
+    transform: none;
+}
+
+.acct-phone{
+    background-image: url(https://wemabank.com/assets/background-V42PbY_R.png);
+     background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0px;
+    
+}
