@@ -140,23 +140,7 @@
     margin-left: 350px;
 }
 
-/* .nav2-links-ul{
-   list-style-type: none;
-   background-color: white;
-   color: black;
-   text-wrap: nowrap;
-   border-radius: 5px;
-   box-shadow: .5px .5px 2px .1px;
-   display: flex;
-   flex-direction: column;
-   padding: 10px;
-   position: absolute;
-   top: 18px;
-   line-height: 30px;
-   cursor: pointer;
-   opacity: 0;
-   
- } */
+
 
 .dropdown1{
     clip-path: polygon(23% 0, 28% 8%, 100% 8%, 100% 100%, 0 100%, 0 8%, 18% 8%);
@@ -201,7 +185,7 @@
    
 }
 
-.career-link:hover ~ .dropdown1{
+.career-link:hover .dropdowns{
  display:block
 }
 
@@ -246,7 +230,7 @@
 
 .ad-2{
     background-color: white;
-    height: 80dvh;
+    height: 75dvh;
 }
 
 .ad-3{
@@ -306,11 +290,20 @@
     text-decoration: none;
     color: #981D87;
     font-weight: 600;
+    transition: all;
+    transition-duration: .5s;
+}
+
+.ad-button1:hover{
+    transform: scale(110%);
+    background-color: #981D87;
+    color: white;
+    border: none;
 }
 
 .ad-7{
     background-color: white;
-    height: 80dvh;
+    height: 75dvh;
 }
 
 .card2{
@@ -345,6 +338,16 @@
     text-decoration: none;
     color: white;
     font-weight: 600;
+    transition: all;
+    transition-duration: .5s;
+}
+
+.ad-button2:hover{
+    transform: scale(110%);
+    background-color: white;
+    color: #981D87;
+    border: 1px solid #981D87;
+
 }
 
 .ad-8{
@@ -385,6 +388,16 @@
     text-decoration: none;
     color: #B53489;
     font-weight: 600;
+    transition: all;
+    transition-duration: .5s;
+}
+
+.ad-button3:hover{
+    transform: scale(110%);
+    background-color: #981D87;
+    color: white;
+    border: 1px solid #981D87;
+
 }
 
 .ad-9{
@@ -425,6 +438,15 @@
     text-decoration: none;
     color: #814590;
     font-weight: 600;
+    transition: all;
+    transition-duration: .5s;
+}
+
+.ad-button4:hover{
+    transform: scale(110%);
+    background-color: #981D87;
+    color: white;
+    border: none;
 }
 
 .ad-10{
@@ -466,6 +488,15 @@
     text-decoration: none;
     color: #B53489;
     font-weight: 600;
+    transition: all;
+    transition-duration: .5s;
+}
+
+.ad-button5:hover{
+    transform: scale(110%);
+    background-color: #981D87;
+    color: white;
+    border: none;
 }
 
 .ad-11{
@@ -506,6 +537,15 @@
     text-decoration: none;
     color: rgb(215, 212, 212);
     font-weight: 600;
+    transition: all;
+    transition-duration: .5s;
+}
+
+.ad-button6:hover{
+    transform: scale(110%);
+    background-color: white;
+    color: #981D87;
+    border: none;
 }
 
                 /* ad-responsiveness */
@@ -864,6 +904,15 @@
     text-decoration: none;
     color: rgb(215, 212, 212);
     font-weight: 600;
+    transition: all;
+    transition-duration: .5s;
+}
+
+.SME-texts>a:hover{
+    transform: scale(105%);
+    background-color: white;
+    color: #981D87;
+    border: 1px solid #981D87;
 }
 
 @media(max-width:900px){
@@ -1001,6 +1050,15 @@
     text-decoration: none;
     color: rgb(215, 212, 212);
     font-weight: 600;
+    transition: all;
+    transition-duration: .5s;
+}
+
+.custom-texts>a:hover{
+    transform: scale(105%);
+    background-color: white;
+    color: #981D87;
+    border: 1px solid #981D87;
 }
 
 @media(max-width:900px){
@@ -1092,6 +1150,15 @@
     text-decoration: none;
     color: rgb(215, 212, 212);
     font-weight: 600;
+    transition: all;
+    transition-duration: .5s;
+}
+
+.ALAT-texts>a:hover{
+    transform: scale(105%);
+    background-color: white;
+    color: #981D87;
+    border: 1px solid #981D87;
 }
 
 @media(max-width:900px){
@@ -1139,10 +1206,90 @@
     width: 80%;
     /* border: 2px solid white; */
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 25px;
+    display: flex;
+    justify-content: space-between;
+
     /* align-items: center; */
+}
+
+.investor-texts{
+    /* border: 1px solid white; */
+    width: 50%;
+}
+
+.investor-img>img{
+        width: 600px;
+}
+
+@media(max-width:900px){
+    
+
+    .investor-content{
+        flex-wrap: nowrap;
+        gap:20px;
+    }
+
+     .investor-img>img{
+        width: 350px;
+        
+    }
+
+   .ratings{
+    display: flex !important;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    width: 100%;
+    
+   }
+}
+
+@media(max-width:500px){
+   
+
+    .investor-texts{
+        width: 100%;
+        
+        
+    }
+
+    .investor-content{
+        width: 95%;
+        flex-wrap: wrap;
+        gap:20px;
+    }
+
+    .ratings{
+    display: flex !important;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    width: 100%;
+    
+   }
+
+   .investor-img>img{
+        width: 400px;
+        
+    }
+
+    
+.investor-texts>h6{
+    color: silver;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.investor-texts>h2{
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.investor-texts>p{
+    font-size: 13px;
+     color: rgb(165, 164, 164);
+}
+
+     
 }
 
 .investor-texts>h6{
@@ -1246,6 +1393,15 @@
     text-decoration: none;
     color: rgb(215, 212, 212);
     font-weight: 600;
+    transition: all;
+    transition-duration: .5s;
+}
+
+.sustainability-texts>a:hover{
+    transform: scale(105%);
+    background-color: white;
+    color: #981D87;
+    border: 1px solid #981D87;
 }
 
 .plant-img{
@@ -1373,8 +1529,16 @@
     margin-top: 8px;
 }
 
+
+
 .app-store-resp{
     display: none;
+}
+
+@media(max-width:900px){
+    .star-icon2{
+        display: none;
+    }
 }
 
 @media(max-width:500px){
@@ -1513,6 +1677,7 @@
     text-decoration: none;
     border-radius: 20px;
     padding: 5px 20px;
+
 }
 
 .article-blog>p{
@@ -1547,6 +1712,16 @@
     text-decoration: none;
     color: #B53489;
     font-weight: 600;
+    transition: all;
+    transition-duration: .9s;
+}
+
+.duplo-text>a:hover{
+    transform: scale(105%);
+    padding: 20px 30px;
+    background-color: #981D87;
+    color: white;
+    border: none;
 }
 
 .youtube{
@@ -1623,6 +1798,15 @@
     text-decoration: none;
     color: white;
     font-weight: 600;
+    transition: all;
+    transition-duration: .5s;
+}
+
+.footer-btn:hover{
+    transform: scale(105%);
+    background-color:white;
+    color: #981D87;
+    border: 1px solid;
     
 }
 
