@@ -538,6 +538,18 @@
     font-weight: 700;
 }
 
+@media(max-width:900px){
+    .news-body{
+        width: 10%;
+    }
+}
+
+@media(max-width:500px){
+    .news-body{
+        width: 15%;
+    }
+}
+
 .news-text{
     position: relative;
     overflow: hidden;
@@ -602,25 +614,112 @@
    
     transform: translate(0px,-15px)  rotateX(10deg);
     
+}
+
+.card-section-resp{
+    display: none;
+}
+
+@media(max-width:900px){
+    .card-section{
+        display: none;
+        border: 10px solid;
     }
 
+    .card-section-resp{
+        opacity: 1;
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0px 0px;
+        margin: auto;
+        width: 80%;
+        border-bottom: 1px solid grey;
+        
+    }
+
+    .chevron-content{
+        display: none;
+        background-color: #FBFBFB;
+        padding: 20px;
+        margin-right: auto;
+    }
+
+    .bi-chevron:hover .chevron-content{
+        display: block;
+    }
 
     .top-flex{
+        padding-top: 50px;
+    }
+}
+
+/* @media(max-width:600px){
+    .card-section{
+        display: none;
+    }
+} */
+
+.top-flex{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         width: 80%;
         margin: auto;
-        
+ }
 
+ .top-flex>div{
+    flex-shrink: 0;
+    width: 50%;
+ }
+
+ .top-flex>img{
+    width: 50%;
+ }
+
+  @media(max-width:1000px){
+    .top-flex>div{
+        width: 50%;
+        font-size: large;
     }
 
-    .flex-text{
+    
+    
+ }
+
+ @media(max-width:600px){
+    .top-flex{
+        width: 95%;
+        font-size: larger;
+    }
+
+    .top-flex>div{
+        width: 100%;
+    }
+
+    .top-flex>div>h6{
+        font-size: 30px;
+    }
+    .top-flex>div>h2{
+        font-size: 35px;
+    }
+    .top-flex>div>p{
+        font-size: 18px;
+    }
+
+    .top-flex>img{
+        display: none;
+    }
+    
+ }
+
+.flex-text{
         /* border: 1px solid; */
         width: 47%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
+ }
 
 .flex-text>h6{
     color: #981D87;
@@ -713,6 +812,8 @@
     margin:70px auto;
     /* border: 1px solid green; */
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-between;
     z-index: 2;
 }
@@ -723,6 +824,10 @@
     justify-content: center;
     width: 53%;
 }
+
+ .tailor-img>img{
+        width: 450px;
+    }
 
 .SME-logo{
     display: flex;
@@ -761,13 +866,61 @@
     font-weight: 600;
 }
 
+@media(max-width:900px){
+    .td-1{
+        display: none;
+    }
+
+    .tailor-container{
+        flex-wrap: nowrap;
+        gap:20px;
+    }
+
+     .tailor-img>img{
+        width: 300px;
+
+    }
+}
+
+@media(max-width:500px){
+    .tailor-dots{
+        display: none;
+    }
+
+    .tailor-flex-texts{
+        width: 100%;
+    }
+
+    .tailor-container{
+        flex-direction: column-reverse;
+        gap:20px;
+    }
+
+     .tailor-img>img{
+        width: 350px;
+    }
+}
+
+
 .wide-cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
     /* border: 1px solid; */
     width: 80%;
     margin: auto;
+}
+
+@media(max-width:900px){
+    .wide-cards{
+        display: flex;
+    }
+}
+
+@media(max-width:500px){
+    .wide-cards{
+        flex-wrap: wrap;
+    }
 }
 
 .card{
@@ -793,10 +946,12 @@
 }
 
 .gif-container{
-    width: 70%;
-    margin:70px 150px 70px;
+    width: 80%;
+    margin:70px auto;
     /* border: 1px solid green; */
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-between;
     z-index: 2;
 }
@@ -807,6 +962,8 @@
     justify-content: center;
     width: 53%;
 }
+
+ 
 
 .custom-logo{
     display: flex;
@@ -846,11 +1003,44 @@
     font-weight: 600;
 }
 
+@media(max-width:900px){
+    
+
+    .gif-container{
+        flex-wrap: nowrap;
+        gap:20px;
+    }
+
+     .gif-img>img{
+        width: 300px;
+
+    }
+}
+
+@media(max-width:500px){
+   
+
+    .gif-flex-texts{
+        width: 100%;
+    }
+
+    .gif-container{
+        flex-direction: column-reverse;
+        gap:20px;
+    }
+
+     .gif-img>img{
+        width: 350px;
+    }
+}
+
 .trader-container{
     width: 80%;
     margin:70px auto;
     /* border: 1px solid green; */
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-between;
     z-index: 2;
 }
@@ -861,6 +1051,10 @@
     justify-content: center;
     width: 53%;
 }
+
+ .trader-img>img{
+        width: 450px;
+    }
 
 .ALAT-logo{
     display: flex;
@@ -900,8 +1094,39 @@
     font-weight: 600;
 }
 
+@media(max-width:900px){
+    
+
+    .tarder-container{
+        flex-wrap: nowrap;
+        gap:20px;
+    }
+
+     .trader-img>img{
+        width: 300px;
+
+    }
+}
+
+@media(max-width:500px){
+   
+
+    .trader-flex-texts{
+        width: 100%;
+    }
+
+    .trader-container{
+        flex-direction: column-reverse;
+        gap:20px;
+    }
+
+     .trader-img>img{
+        width: 350px;
+    }
+}
+
 .investor-relations{
-    border: 1px solid;
+    border:1px solid #981D87;
     /* height: 50dvh; */
     background-image: url(https://wemabank.com/assets/background-V42PbY_R.png);
     background-repeat: no-repeat;
@@ -970,8 +1195,8 @@
     background-color: #FBFBFB;
     width: 80%;
     margin:70px auto;
-    /* border: 1px solid green; */
     display: flex;
+    gap: 20px;
     justify-content: space-between;
     z-index: 2;
 }
@@ -982,6 +1207,8 @@
     justify-content: center;
     width: 53%;
 }
+
+ 
 
 .sustainability-logo{
     display: flex;
@@ -1034,8 +1261,51 @@
     flex-direction: column;
 }
 
+@media(max-width:900px){
+    
+
+    .plant-container{
+        flex-wrap: nowrap;
+        gap:20px;
+    }
+
+     .plant-img-left>img{
+        width: 150px;
+        
+    }
+
+    .plant-img-left{
+        height: 100%;
+    }
+}
+
+@media(max-width:500px){
+   
+
+    .plant-flex-texts{
+        width: 100%;
+    }
+
+    .plant-container{
+        flex-wrap: wrap;
+        gap:20px;
+    }
+
+     .plant-img-left>img{
+        width: 150px;
+    }
+
+    .plant-img {
+        gap: 1px;
+    }
+
+    .plant-img-left{
+        gap:4px;
+    }
+}
+
 .testimonial-container{
-    /* background-color: yellow; */
+    background-color: whitesmoke;
     margin-top: 60px;
     padding: 60px 0px;
     
@@ -1059,28 +1329,443 @@
     font-weight: 600;
 }
 
-.testimonial-flex{
-    display: flex;
-    flex-wrap: nowrap;
-    padding-left: 50px;
-    gap: 20px;
-    overflow-x: auto;
-  scroll-behavior: smooth;
+.testimonial-splide{
+    width: 90%;
+    padding-left: 30px;
 }
 
 .testimonial-card{
-    flex-shrink: 0;
-
-}
-
-.testimonial-card:hover{
-    transform: none;
+    box-shadow: .5px 2px 3px  1px grey;
+    border: 1px solid silver;
+    border-radius: 4px;
 }
 
 .acct-phone{
     background-image: url(https://wemabank.com/assets/background-V42PbY_R.png);
      background-repeat: no-repeat;
     background-size: cover;
+    padding: 60px 0px 0px;
+    position: relative;
+}
+
+.app-store-icons{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 20px;
+}
+
+.toggle-div{
+    
+    margin: auto;
+}
+
+.toggle-icon{
+    display: flex;
+     align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.toggle-icon>p{
+    color: white;
+    margin-top: 8px;
+}
+
+.app-store-resp{
+    display: none;
+}
+
+@media(max-width:500px){
+    .app-store-icons{
+        display: none;
+    }
+
+    .line-acct{
+        display: none;
+    }
+
+    .acct-right>a{
+        display: none;
+    }
+
+    .star-icons{
+        display: none;
+    }
+
+    .app-store-resp{
+        /* display: block; */
+        display: flex;
+        flex-direction: column;
+        width: min-content; 
+        margin: auto;
+        gap: 10px;
+    }
+
+    .phone-img{
+        margin: auto;
+    }
+
+}
+
+.main-acct-phone{
+    display: flex;
+    /* border: 1px solid yellow; */
+    width: fit-content;
+    margin: auto;
+    gap: 40px;
+    align-items: end;
+}
+
+
+
+
+.star-icon1{
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+.star-icon2{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+.star-icon3{
+    position: absolute;
+    top: 70%;
+    right: 10%;
+}
+
+.blog-container{
+    /* background-color: yellow; */
+    margin-top: 60px;
     padding: 60px 0px;
     
 }
+
+.blog-smaller-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid; */
+    
+}
+
+.blog-texts>h6{
+    color: #981D87;
+    font-weight: 600;
+}
+
+.blog-texts>h3{
+    font-weight: 600;
+}
+
+.blog-card{
+    transform: none;
+}
+
+.blog-grid-1:hover{
+    /* width: 80%; */
+    /* margin: auto; */
+    /* border: 1px solid; */
+    transform: none;
+}
+
+.blog-1-img{
+    width: fit-content;
+    
+}
+
+.blog-1-img>img{
+    height: 100%;
+}
+
+.blog-1-texts{
+    
+}
+
+.blog-grid-2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.blog-2-img{
+    width: fit-content;
+     height: 100%
+}
+
+.blog-grid-2 .card:hover{
+   transform: none;
+}
+
+.article-blog{
+    display: flex;
+    gap: 20px;
+    
+}
+
+.article-text>a{
+    color: #981D87;
+    background-color: #FFF4FF;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+.article-blog>p{
+    color: grey;
+    font-size: 14px;
+
+}
+
+.duplo-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.duplo-text>h4{
+    font-weight: 600;
+    font-size: 16px;
+
+}
+
+.duplo-text>p{
+    color: grey;
+    font-size: 14px;
+
+}
+
+.duplo-text>a{
+    border: 1px solid silver;
+    width: fit-content;
+    padding: 20px 20px;
+    border-radius: 50px;
+    background-color: white;
+    text-decoration: none;
+    color: #B53489;
+    font-weight: 600;
+}
+
+.youtube{
+    margin-top: 60px;
+    box-shadow: .5px .5px 2px .1px;
+}
+
+.youtube>iframe{
+    width: 100%;
+    height: 60dvh;
+    /* border: 10px solid; */
+    padding: 10px;
+}
+
+@media(max-width:900px){
+    .youtube>iframe{
+        height: 45dvh;
+    }
+}
+
+.footer{
+    background-image: url(https://wemabank.com/assets/background-V42PbY_R.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:1px solid #981D87;
+}
+
+.newsletter-container{
+    width: 80%;
+    background-color: white;
+    margin:60px auto 0px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.msg-icon{
+    display: flex;
+    gap: 20px;
+}
+
+.msg-icon>div>h6{
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+.msg-icon>div>p{
+    font-size: 14px;
+}
+
+.footer-form{
+    background-color: #F5F5F5;
+    padding: 10px 5px 10px 40px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: s;
+}
+
+.footer-form>input{
+    background-color: transparent;
+    border: none;
+    
+}
+
+.footer-btn{
+     /* border: 2px solid; */
+    width: fit-content;
+    padding: 15px 22px;
+    border-radius: 50px;
+    background-color: #981D87;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    
+}
+
+.footer-texts{
+    /* width: 80%; */
+    /* border: 1px solid white; */
+    margin: 60px auto 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.cbn-div{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid yellow; */
+    gap: 30px;
+    /* color: white; */
+    font-weight: 600;
+}
+
+.cbn-div>img{
+    filter: brightness(0) invert(1);
+    width: fit-content;
+}
+
+.footer-sm-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid pink; */
+    height: 100%;
+    font-size: 14px;
+}
+
+.sm-icons{
+    filter: invert(1);
+    list-style: none;
+    /* border: 1px solid; */
+    width: fit-content;
+}
+
+.sm-icons>img{
+    padding-right: 20px;
+}
+
+.footer-li{
+   
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
+    row-gap: 30px;
+    /* border: 1px solid yellow; */
+}
+
+.footer-ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-ul>a{
+    color: #cfcacf;
+    font-size: 14px;
+    line-height: 28px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.bottom-text{
+    color: #981D87;
+    text-align: center;
+    padding: 12px 0px;
+    font-size: 14px;
+}
+
+.footer-resp{
+    display: none;
+}
+
+@media(max-width:500px){
+    .newsletter-container{
+        display: none;
+
+    }
+
+    .sm-icons{
+        display: none;
+    }
+
+    .footer-sm-div>p{
+        display: none;
+    }
+
+    .footer-resp{
+        display: block;
+    }
+
+    .bdr-bottom{
+        width: 90%;
+        margin: 20px auto;
+        border-bottom: 1px solid silver;
+
+    }
+
+    .sm-icons2{
+    filter: invert(1);
+    list-style: none;
+    /* border: 1px solid; */
+    width: fit-content;
+    margin: auto;
+    
+    }
+
+    .sm-icons2>img{
+        padding: 0px 10px 20px;
+    }
+
+    .footer-resp>p{
+        text-align: center;
+        color: white;
+        font-size: 14px;
+    }
+}
+
+.bi-chat-right-text-fill{
+    position: fixed;
+    z-index: 1000;
+    bottom: 20px;
+    right: 30px;
+    background-color: #981D87;
+    padding: 10px 15px;
+    border-radius:50px;
+    color: white;
+    font-size: larger;
+    box-shadow: .5px .5px 3px 1px grey;
+}
+
+
+
+
+
