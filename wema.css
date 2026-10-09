@@ -212,50 +212,142 @@
   
 }
 
+@media(max-width:900px){
+    .ad-o{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;   
+    }
+    .ad-o>img{
+        height: 400px;
+        
+    }
+}
+
+@media(max-width:500px){
+    .ad-o >img{
+        height: 200px !important;
+    }
+}
+
+.ad-o>img{
+    height: 500px;
+}
+
 .ad-0{
     background-image: url(https://wemabank.com/assets/web-bg-NeQw25Yh.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80dvh;
+    min-height: 80dvh;
     
+}
+
+@media(max-width:900px){
+    .ad-a{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;   
+    }
+    .ad-a>img{
+        height: 400px;
+        
+    }
+}
+
+@media(max-width:500px){
+    .ad-a>img{
+        height: 300px !important;
+    }
+}
+
+.ad-a>img{
+    height: 500px;
 }
 
 .ad-1{
     background-image: url(https://wemabank.com/assets/jingle-bg-Db3fxZJc.jpg );
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80dvh;
+    min-height: 80dvh;
     
+}
+
+@media(max-width:900px){
+    .ad-b{
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column-reverse;    */
+    }
+    .ad-b>img{
+        height: 400px;
+        
+    }
+}
+
+@media(max-width:500px){
+    .ad-b>img{
+        height: 300px !important;
+    }
+}
+
+.ad-b>img{
+    height: 500px;
 }
 
 .ad-2{
     background-color: white;
-    height: 75dvh;
+    min-height: 75dvh;
+}
+
+@media(max-width:900px){
+    .ad-c{
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column-reverse;    */
+    }
+    .ad-c>img{
+        height: 100px;
+        
+    }
+}
+
+@media(max-width:500px){
+    .ad-c>img{
+        height: 200px !important;
+    }
+
+    .phone-remove{
+        display: none;
+    }
+}
+
+.ad-c>img{
+    height: 500px;
 }
 
 .ad-3{
     background-image: url(https://wemabank.com/assets/hero-background-NkSVHum_.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80dvh;
+    min-height: 80dvh;
 }
 
 .ad-4{
     background-image: url(https://wemabank.com/assets/bg-wk-lUXns.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80dvh;
+    min-height: 80dvh;
 }
 .ad-5{
    background-color: white;
-    height: 80dvh;
+    min-height: 80dvh;
 }
 
 .ad-6{
     background-image: linear-gradient(to bottom right, #b73fb3, #320f31);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80dvh;
+   min-height: 80dvh;
 }
 
 .card1{
@@ -303,7 +395,7 @@
 
 .ad-7{
     background-color: white;
-    height: 75dvh;
+    min-height: 75dvh;
 }
 
 .card2{
@@ -353,7 +445,7 @@
 .ad-8{
     background-image: linear-gradient(to right bottom, #B13490, #ed375b), linear-gradient(to bottom, rgba(255, 255, 255, 0.779));
     
-    height: 80dvh;
+    min-height: 80dvh;
 }
 
 .card3{
@@ -403,7 +495,7 @@
 .ad-9{
     background-image: linear-gradient(to right bottom, #34C9AF, #814590), linear-gradient(to bottom, rgba(255, 255, 255, 0.779));
     
-    height: 80dvh;
+    min-height: 80dvh;
 }
 
 .card4{
@@ -453,7 +545,7 @@
     background-image:url(https://wemabank.com/assets/background-V42PbY_R.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80dvh;
+    min-height: 80dvh;
 }
 
 .card5{
@@ -502,7 +594,7 @@
 .ad-11{
     background-color: silver;
     
-    height: 80dvh;
+    min-height: 80dvh;
 }
 
 .card6{
