@@ -261,7 +261,7 @@
 }
 
 .ad-a>img{
-    height: 500px;
+    height: 600px;
 }
 
 .ad-1{
@@ -291,7 +291,7 @@
 }
 
 .ad-b>img{
-    height: 500px;
+    height: 550px;
 }
 
 .ad-2{
@@ -300,37 +300,27 @@
 }
 
 @media(max-width:900px){
-    .ad-c{
+    .ad-d{
         display: flex;
         flex-wrap: wrap;
         /* flex-direction: column-reverse;    */
     }
-    .ad-c>img{
-        height: 100px;
-        
-    }
+    
+    
 }
 
 @media(max-width:500px){
-    .ad-c>img{
-        height: 200px !important;
+    .ad-d>img{
+        height: 300px !important;
     }
 
-    .phone-remove{
-        display: none;
-    }
 }
 
-.ad-c>img{
-    height: 500px;
+.ad-d>img{
+    height: 550px;
 }
 
-.ad-3{
-    background-image: url(https://wemabank.com/assets/hero-background-NkSVHum_.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 80dvh;
-}
+
 
 .ad-4{
     background-image: url(https://wemabank.com/assets/bg-wk-lUXns.png);
@@ -338,9 +328,51 @@
     background-size: cover;
     min-height: 80dvh;
 }
+
+@media(max-width:900px){
+    .ad-e{
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column-reverse;    */
+    }
+    
+    
+}
+
+@media(max-width:500px){
+    .ad-e>img{
+        height: 400px !important;
+    }
+
+}
+
+.ad-e>img{
+    height: 500px;
+}
 .ad-5{
    background-color: white;
     min-height: 80dvh;
+}
+
+@media(max-width:900px){
+    .ad-f{
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column-reverse;    */
+    }
+    
+    
+}
+
+@media(max-width:500px){
+    .ad-f>img{
+        height: 300px !important;
+    }
+
+}
+
+.ad-f>img{
+    height: 500px;
 }
 
 .ad-6{
@@ -814,9 +846,6 @@
         width: 50%;
         font-size: large;
     }
-
-    
-    
  }
 
  @media(max-width:600px){
